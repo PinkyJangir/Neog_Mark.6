@@ -20,7 +20,10 @@ function clickHandler() {
     // calling server for processing
     fetch(getTranslationURL(txtInput.value))
         .then(response => response.json())
-        .then(json=> console.log(json))
+        .then(json=> {
+            var translated=json.contents.translation;
+            outputDiv.innerText=translated;
+        })
         .catch(errorHandler)
 };
 
