@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+:root {
+    --primary-color: #FBBF24;
+}
+
+
+nav {
+    background-color: var(--primary-color);
+    text-align: center;
+    color:black;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
